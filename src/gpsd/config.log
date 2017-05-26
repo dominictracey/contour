@@ -1,0 +1,47 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:550: checking for gcc
+configure:663: checking whether the C compiler (gcc  ) works
+configure:679: gcc -o conftest    conftest.c  1>&5
+configure:705: checking whether the C compiler (gcc  ) is a cross-compiler
+configure:710: checking whether we are using GNU C
+configure:738: checking whether gcc accepts -g
+configure:770: checking for POSIXized ISC
+configure:794: checking whether the C compiler (gcc) compiles and links a simple C program
+configure:843: checking how to run the C preprocessor
+configure:927: checking for termio.h
+configure:927: checking for sys/param.h
+configure:927: checking for termios.h
+configure:927: checking for sys/termios.h
+configure:927: checking for sys/select.h
+configure:927: checking for strings.h
+configure:927: checking for path.h
+configure:927: checking for sys/filio.h
+configure:966: checking for gethostbyname in -lnsl
+configure:1007: checking for socket in -lsocket
+configure:1050: checking for sin in -lm
+configure:1091: checking for open in -lc
+configure:1132: checking for regcmp in -lgen
+configure:1190: checking for X
+configure:1504: checking for dnet_ntoa in -ldnet
+configure:1545: checking for dnet_ntoa in -ldnet_stub
+configure:1593: checking for gethostbyname
+configure:1691: checking for connect
+configure:1783: checking for remove
+configure:1875: checking for shmat
+configure:1976: checking for IceConnectionNumber in -lICE
+configure:2047: checking for Motif
+configure:2260: checking for Athena
+configure:2469: checking for Xpm
+configure:2661: checking for XOpenDisplay in -lX11
+configure:2710: checking for _Xlcmbcurmax in -lXintl
+configure:2750: checking for shmap in -lipc
+configure:2791: checking for XtToolkitInitialize in -lXt
+configure:2844: checking for XawInitializeWidgetSet in -lXaw
+configure:2898: checking for XShapeQueryVersion in -lXext
+configure:2940: checking for XpmCreatePixmapFromXpmImage in -lXpm
+configure:2988: checking for X11/xpm.h
+configure:2988: checking for xpm.h
+configure:3031: checking for XpSelectInput in -lXp
+configure:3075: checking for XmCreateOptionMenu in -lXm

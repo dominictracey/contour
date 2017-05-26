@@ -1,0 +1,55 @@
+MENUS, TOOLBARS, SIGNALS AND THE COMMAND DESIGN PATTERN
+
+To add a new toolbar button or menu item you need to create a Command that 
+executes its behavior. The Command class hierarchy is based on the GOF book
+Command design pattern. The general players in the GTK+ implementation are:
+
+- Menu items and toolbar buttons. Have their action signals routed to a generic
+GtkCommandHandler::Handle GTK_SIGNAL_FUNC static method. The data field is
+used to pass the Command in to this handler.
+
+- GtkCommandHandler. Simply casts the data parameter of the GTK signal callback
+to a Command * and invokes its Execute method.
+
+- Command. Defines the Execute() method in an abstract interface.
+
+- Command subclasses. Over-ride Execute() to produce desired action. 
+
+
+STATEFUL MENU ITEMS AND TOOLBAR BUTTONS
+
+There are menu items that have checks next to them and toolbar buttons that toggle in and out to represent the state of the property controlled by them. These
+properties are often controlled by BOTH a menu item and a toolbar button. In
+these cases you need to synch up the two (or more) GUI elements. Since I could
+find no obvious way of doing this I put in a rudimentary notification-subscriber
+infrastructure. Commands can Broadcast() event occurences if they inherit from
+EventSourceCommand. Menus and Toolbars can subscribe to these events if they
+implement the EventSubscriber interface. GtkCheckMenuItems and GtkToggleButtons
+on the toolbar should use this model.
+
+TO ADD A NEW MENU ITEM OR TOOLBAR BUTTON
+
+Figure out what kind of action is going to be created. This can be one of:
+	- APPLICATION: General application action. Hopefully this is for you.
+	- PAN: All different directions.
+	- ZOOM: In or out by varying increments
+	- EVENT SOURCE: Sets state of an application "preference". Even if no other GUI element must reflect this info you should go this way since you will 
+want to have the state correctly configured during application start-up. Note 
+that as of 1/31/01, you need to create a new subclass of EventSourceCommand
+for each new preference modeled. All the other commands don't require this.
+
+Create the appropriate command code or subclass.
+ 
+Add an entry in the menu ItemFactory thingie or add to the method that creates
+the toolbar button. Create an instance of the command using Command::Create to
+have something to pass into the signal callback. Use the generic 
+GtkCommandHandler::Handle as the callback.
+
+If this is going to be an EventSource command, add in cases to the Menu or
+Toolbars Notify() methods. Add code to GtkApp::Initialize to set the state at
+start-up.
+
+1/31/01
+DPT
+
+

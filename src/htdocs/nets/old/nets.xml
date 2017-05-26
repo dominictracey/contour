@@ -1,0 +1,63 @@
+<?
+/*
+**	nets.xml - Display and collect information about fishing nets.
+**
+**	(c) 2001 Aquilon Technology Systems, Inc.
+*/
+
+	// Its always XML
+	header ("Content-Type: text/xml"); 
+	echo "<?xml version=\"1.0\"?>";
+
+	// Find out what we need to display, the action 
+	// [show_all|edit|add|delete], determines the stylesheet
+	if ( $HTTP_GET_VARS["action"] == "show_all" )
+		echo "\n<?xml-stylesheet type=\"text/xsl\" href=\"../style/show_all.xsl\"?>"; 
+	elseif ( $HTTP_GET_VARS["action"] == "edit" )
+		echo "\n<?xml-stylesheet type=\"text/xsl\" href=\"../style/edit.xsl\"?>"; 
+	elseif ( $HTTP_GET_VARS["action"] == "add" )
+		echo "\n<?xml-stylesheet type=\"text/xsl\" href=\"../style/add.xsl\"?>"; 
+	elseif ( $HTTP_GET_VARS["action"] == "delete" )
+		echo "\n<?xml-stylesheet type=\"text/xsl\" href=\"../style/delete.xsl\"?>";
+	else
+		echo "Unknown action";
+
+	echo "
+
+<nets>
+";
+
+	// connect to database
+	$conn = pg_Connect("host=192.168.2.1 port=5432 dbname=contour user=contour");
+
+	$result = pg_exec($conn,"select * from nets;");
+	if (!$result)
+		echo "Problem with query";
+	else
+	{
+		$num = pg_numrows($result);
+		for ($row = 0; $row < $num && $data = pg_fetch_object($result, $row); $row++)
+		{
+			echo "	<net id=\"".$data->netid."\">
+";
+			echo "		<name>".$data->name."</name>
+";
+			echo "		<description>".$data->description."</description>
+";
+			echo "		<specs>
+";
+			echo "			<footrope_length>".$data->footrope_length."</footrope_length>
+";
+			echo "			<headrope_length>".$data->headrope_length."</headrope_length>
+";
+			echo "		</specs>
+";
+			echo "	</net>
+";
+		}
+	}
+	pg_close($conn);
+
+	echo "</nets>";
+?>
+

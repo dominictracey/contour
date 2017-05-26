@@ -1,0 +1,345 @@
+
+                               NOS CARTOGRAPHIC CODES
+  
+                THIS FILE LISTS CARTOGRAPHIC CODES USED IN DIGITAL HYDROGRAPHIC 
+           SURVEY DATA BY THE NATIONAL OCEAN SERVICE (NOS HYDROGRAPHIC
+           SURVEY GUIDELINES NO. 35, OCTOBER 31, 1984).  CODES USED IN THE PAST 
+           AND NOT REFERENCED BY THE CURRENT GUIDELINES ARE MARKED '[ARCHAIC!'. 
+           PRECEDING EACH CODE IS A LETTER THAT INDICATES WHETHER OR NOT IT IS  
+           INCLUDED IN THE NOS HYDROGRAPHIC DATA BASE MAINTAINED AT THE
+           NATIONAL GEOPHYSICAL DATA CENTER:
+  
+                S = DEPTH SOUNDING OR ELEVATION (INCLUDED)
+                D = FIXED NAVIGATIONAL HAZARD OR AID (INCLUDED)
+                B = BOTTOM CHARACTERISTIC (INCLUDED)
+                T = TEMPORARY OR NOT-FIXED POINT (NOT INCLUDED)
+                L = LINEAR DATA (NOT INCLUDED)
+  
+  
+            L 001  APPROX. SHORELINE (HWL)
+            L 002  SHOAL/SHALLOW (AREA LIMITS)
+            L 003  MARSH, SWAMP, AND MANGROVE
+            L 004  STATIONARY STRUCTURE (TO SCALE) 
+            L 005  SAND DUNES (AREA LIMITS)  
+            L 006  MANGROVE, SWAMP (AREA LIMITS)
+            L 007  FAST SOLID LAND
+            L 008  ZERO DEPTH CURVE--SHORELINE MAP SOURCE
+            L 009  REEF OR LEDGE, SUBMERGED (AREA LIMITS)
+            D 010  DOLPHIN 
+            L 011  BREAKERS (AREA LIMITS)
+            L 012  CONTOUR LINE (INTERMEDIATE)
+            L 013  ZERO DEPTH CURVE
+            L 014  MARSH (AREA LIMITS) 
+            L 015  RAPIDS, WATERFALL (SYMBOL)
+            L 016  PIER, FLOATING
+            L 017  LAVA (AREA LIMITS)  
+            L 018  PERENNIAL DRAINAGE  
+            L 019  INTERMITTENT DRAINAGE
+            D 020  TRIANGULATION STATION
+            S 021  SPOT ELEVATION (FEET AND TENTHS)
+            D 023  BOUNDARY MONUMENT
+            L 025  LEVEE, DIKE (DOUBLE LINE) 
+            L 026  BREAKWATER, JETTY (SUBMERGED)
+            L 027  BREAKWATER, JETTY
+            L 028  BREAKWATER, JETTY [ARCHAIC!
+            L 029  BREAKWATER, JETTY (AREA LIMITS) 
+            L 030  PIER
+            L 031  GROIN
+            L 037  GENERAL DANGER LIMIT [ARCHAIC!  
+            L 038  WHARF, BULKHEAD, SEAWALL, ETC.  
+            L 039  MARINE RAILWAY
+            L 040  DRYDOCK 
+            L 041  FLOATING DRYDOCK
+            L 042  MARINE RAILWAY (SUBM. OFFSH. LIMITS)  
+            L 043  LOCK
+            L 044  WRECK, HULK (TO SCALE)
+            L 045  WRECK, HULK (TO SCALE)
+            L 047  TRAIL, FOOTPATH, TUNNEL
+            L 048  ROAD (UNIMPROVED)
+            L 050  RAILROAD
+            D 051  TUNNEL ENTRANCE
+            L 053  COURSE LINE [ARCHAIC!
+            L 054  TRANSMISSION LINE
+            L 055  RAMP
+            D 056  WELL, OIL OR GAS
+            L 057  BRIDGE (CONFIG.)
+            L 058  CANAL (DOUBLE LINE) 
+            L 059  BRIDGE (SYMBOL)
+            L 060  DANGER AREA LIMITS (OBSTRUCTIONS)
+            L 065  DAM
+            L 069  URBAN AREA (AREA LIMITS)  
+            D 070  LIGHTED STRUCTURE, LOCATED APPROX. [ARCHAIC!
+            L 071  CHANNEL LIMITS, 400 FT AND WIDER [ARCHAIC!  
+            L 072  ROAD (IMPROVED)
+            L 073  STRUCTURE, LARGE (DRAWN TO SCALE)
+            L 074  STRUCTURE, LARGE (CROSS-HATCHED)
+            T 078  SYMBOL NOT TO BE PLOTTED  
+            D 079  STRUCTURE, TANK [ARCHAIC! 
+            D 080  TANK (VARIABLE SIZE)
+            D 081  STRUCTURE, SMALL (SOLID FILLED SYMBOL)
+            L 082  CONTOUR LINE (INDEX)
+            D 083  STRUCTURE, SMALL (OPEN SYMBOL)  
+            D 084  COAST GUARD STATION 
+            D 085  OBSTRUCTION
+            D 086  LANDMARK
+            D 087  PRIVATELY MAINTAINED CHANNEL MARKER [ARCHAIC!
+            D 089  ROCK (AWASH OR COVERED)
+            D 090  WRECK (WIRE-DRAG CLEARANCE--FEET)
+            D 091  ROCK (WIRE-DRAG CLEARANCE--FEET)
+            D 092  OBSTRUCTION (WIRE-DRAG CLEARANCE--FEET)
+            D 094  ROCK (NO ELEVATION) 
+            D 095  CORAL (WIRE-DRAG CLEARANCE--FEET)
+            D 097  ISLET SYMBOL (PHOTOGRAMMETRIC SOURCE) 
+            D 098  WRECK
+            D 099  WRECK, MAST(S) VISIBLE
+            D 100  WRECK
+            S 101  SOUNDING, ON WRECK (WHOLE FEET) 
+            D 102  WRECK, SUBMERGED, NONDANGEROUS [ARCHAIC!
+            B 103  KELP (SYMBOL) 
+            D 104  ROCK (NO DEPTH)
+            D 105  PIPE
+            D 106  STAKE
+            L 107  RUINS (CONFIG. OR AREA LIMITS)  
+            L 108  CRIB (CONFIG. OR AREA LIMITS)
+            L 109  CRIB (CONFIG. OR AREA LIMITS)
+            D 110  PILE
+            D 111  PLATFORM, OIL OR GAS
+            L 113  LINE, RANGE OR MEASURED MILE [ARCHAIC!
+            L 118  SUBMARINE CABLE
+            L 121  FISH TRAP (CONFIG.)                 _______________________________________
+            L 122  WRECKAGE, VISIBLE (AREA LIMITS)     \EXAMPLES OF SOUNDING UNITS:          \
+            T 124  BUOY, VERTICAL STRIPED, LIGHTED     \                                     \
+            S 125  SOUNDING (FATHOMS & FEET) [ARCHAIC! \FATHOMS & FEET 234 = 23 4/6 FATHOMS  \
+            S 126  SOUNDING (WHOLE FEET)               \WHOLE UNITS 234 = 234 UNITS          \
+            S 127  SOUNDING (FEET & TENTHS)            \UNITS & TENTHS 234 = 23.4 UNITS      \
+            S 128  SOUNDING (FEET & FRACTION)          \UNITS & FRACTION 234 = 2 3/4 UNITS   \
+            S 129  SOUNDING (WHOLE FATHOMS)            _______________________________________
+            S 130  SOUNDING (FATHOMS & TENTHS)
+            S 131  SOUNDING (FATHOMS & FRACTION)
+            S 132  SOUNDING (WHOLE METERS) [ARCHAIC!
+            S 133  SOUNDING (METERS AND TENTHS) [ARCHAIC!
+            S 134  SOUNDING, UNQUALIFIED
+            S 135  SOUNDING, MINUS (WHOLE FEET)
+            S 136  SOUNDING, MINUS (FEET AND FRACTION)
+            S 137  SOUNDING, MINUS (FATHOMS AND TENTHS)  
+            S 138  SOUNDING, MINUS (METERS AND TENTHS)
+            D 139  CONTROL STATION/STRUCTURE (THIRD-ORDER)
+            S 140  MINUS SOUNDING (FATHOMS AND TENTHS) [ARCHAIC!
+            S 141  SOUNDING, MINUS (FEET AND TENTHS)
+            S 142  SOUNDING, MINUS (FATHOMS AND FRACTION)
+            S 143  MINUS SOUNDING (WHOLE FATHOMS) [ARCHAIC!
+            L 144  FAST LAND (HYDRO. SOURCE--ACCURATE)
+            L 145  FAST LAND (HYDRO. SOURCE--ESTIMATED)  
+            B 146  TIDE RIPS (LABEL)
+            L 147  PIPELINE, OIL OR HAZARDOUS MATERIAL
+            S 148  SOUNDING, MINUS (WHOLE FATHOMS) 
+            S 149  SOUNDING, MINUS (WHOLE METERS)  
+            L 158  ROAD (CENTERLINE)
+            T 182  BUOY, HORIZONTAL BANDED, LIGHTED
+            L 188  ZERO DEPTH CURVE (DASHED) 
+            L 189  MARSH, ETC. (HYDRO. SOURCE--ESTIMATED)
+            L 190  MARSH, ETC. (HYDRO. SOURCE--ACCURATE) 
+            D 195  SIGN, APPROX. POSITION [ARCHAIC!
+            D 200  STRUCTURE, LIGHTED  
+            D 208  LIGHT, FRONT RANGE  
+            D 209  LIGHT, REAR RANGE
+            T 211  DIAGONALLY BANDED BUOY, LIGHTED 
+            T 212  BUOY, OPEN (SYMBOL) 
+            T 214  BUOY, VERITCAL STRIPED
+            T 215  BUOY, MOORING 
+            T 216  BUOY, HORIZONTAL BANDED
+            T 217  BUOY, DIAGONAL BANDED
+            T 218  BUOY,CHECKERED
+            D 219  DAYBEACON, BLACK
+            D 221  MARKER, FRONT (MEASURED COURSE) 
+            D 222  MARKER, REAR (MEASURED COURSE)  
+            D 223  DAYBEACON, OPEN
+            D 224  DAYBEACON, RED
+            L 228  GROIN (SUBMERGED)
+            D 229  MARDER (PRIVATE), LIGHTED 
+            D 230  STUMP
+            D 231  SNAG
+            D 232  DEADHEAD
+            D 233  DOLPHIN 
+            D 234  PILE
+            D 235  PIPE
+            D 236  STAKE
+            D 237  STUMP
+            D 238  SNAG
+            D 239  SHOAL (WIRE-DRAG CLEARANCE--FEET)
+            D 240  HARD (WIRE-DRAG CLEARANCE--FEET)
+            D 241  CRIB (SYMBOL) 
+            D 243  STATION, HYDROGRAPHIC (PHOTO. LOCATED)
+            T 244  STATION, TIDE OR WATER LEVEL
+            T 245  STATION, CURRENT
+            D 246  MARKER, DREDGING (FRONT RANGE)  
+            D 247  MARKER, DREDGING (REAR RANGE)
+            D 248  PLATFORM (SURVEY)
+            D 249  PLATFORM (OIL OR GAS) LIGHTED
+            D 250  STATION, BASIC CONTROL ANTENNA SITE
+            T 251  SOUNDING, MISS (NO SOUNDING)
+            T 252  STATION, HYDROGRAPHIC, SEXTANT  
+            T 253  STATION, HYDRO. (UNCONVENTIONALLY LCTD.)
+            T 254  STATION, HYDRO., NONRECOV. ANTENNA SITE
+            T 255  BUOY, RED
+            T 256  BUOY, BLACK
+            T 257  BUOY, RED, LIGHTED  
+            T 258  BUOY, BLACK, LIGHTED
+            T 259  BUOY, OPEN SYMBOL, LIGHTED
+            L 260  RUINS (CONFIG. OR AREA LIMITS)  
+            D 261  MARKER (PRIVATELY MAINTAINED)
+            S 262  SOUNDING, ON ROCK (FATHOMS AND TENTHS).
+            S 263  SOUNDING, ON ROCK (METERS AND TENTHS).
+            S 264  SOUNDING, ON ROCK (FEET AND TENTHS).  
+            S 265  SOUNDING, ON ROCK (WHOLE FATHOMS)
+            S 266  SOUNDING, ON ROCK (WHOLE METERS)
+            S 267  SOUNDING, ON WRECK (FATHOMS AND TENTHS).
+            S 268  SOUNDING, ON WRECK (METERS AND TENTHS).
+            S 269  SOUNDING, ON WRECK (FEET AND TENTHS). 
+            S 270  SOUNDING, ON WRECK (WHOLE FATHOMS)
+            S 271  SOUNDING, ON WRECK (WHOLE FEET) 
+            S 272  SOUNDING, ON OBSTR. (WHOLE FEET)
+            S 273  SOUNDING, ON OBSTR. (FEET AND TENTHS).
+            S 274  SOUNDING, ON OBSTR. (WHOLE FATHOMS)
+            S 275  SOUNDING, ON OBSTR. (FATHOMS AND TENTHS).
+            S 276  SOUNDING, ON OBSTR. (WHOLE METERS)
+            S 277  SOUNDING, ON OBSTR. (METERS AND TENTHS).
+            D 278  DOLPHIN 
+            D 279  PILE
+            D 280  PIPE
+            D 281  STAKE
+            D 282  STUMP
+            D 283  SNAG
+            D 284  OBSTRUCTION
+            L 285  RUINS (CONFIG. OR AREA LIMITS)  
+            D 286  CRIB (SYMBOL) 
+            D 287  OBSTRUCTION
+            S 290  SOUNDING ON ROCK (WHOLE FEET)
+            S 291  ROCK (WITH ELEVATION) (FEET AND TENTHS)
+            L 315  CONTOUR LINE (APPROX.)
+            L 425  BRIDGE FENDER 
+            D 427  IRREGULARLY SHAPED ISLET [ARCHAIC!
+            L 438  FISH TRAP PERIMETER (AREA LIMITS)
+            T 472  CHECKERED BUOY, LIGHTED
+            L 477  WRECKAGE (AREA LIMITS)
+            D 480  ANCHORAGE (LARGE VESSELS) 
+            T 481  GREEN BUOY
+            T 482  GREEN BUOY, LIGHTED 
+            L 483  FENCE (LINEAR FEATURE)
+            L 489  PLATFORM (OIL OR GAS) TO SCALE  
+            T 498  MOORING BUOY, LIGHTED
+            L 499  SHOAL (AREA LIMITS) [ARCHAIC!
+            L 530  LEDGE, REEF
+            L 531  LEDGE, REEF--SYMBOL AT ONE-HALF SCALE 
+            L 532  LEDGE, REEF--SYMBOL AT ONE-QUARTER SCALE [ARCHAIC!
+            B 533  SPOIL (LABEL) 
+            B 534  WATERFALL (LABEL)
+            B 535  RAPIDS (LABEL)
+            B 536  EDDIES (LABEL)
+            B 537  SHOAL (LABEL) 
+            B 538  FOUL (LABEL)  
+            B 539  BREAKERS (LABEL)
+            B 540  SPICULES [ARCHAIC!  
+            B 545  GRITTY  
+            B 547  SHALE [ARCHAIC!
+            B 548  ROCKY
+            B 549  GROUND [ARCHAIC!
+            B 550  OOZE
+            B 551  CLAY
+            B 552  SILT
+            B 553  MUD
+            B 554  VERY FINE [ARCHAIC! 
+            B 555  FINE
+            B 556  MEDIUM  
+            B 557  COARSE  
+            B 558  SAND
+            B 559  GRAVEL  
+            B 560  SHINGLE 
+            B 561  QUARTZ [ARCHAIC!
+            B 562  CORAL HEAD
+            B 563  VOLCANO [ARCHAIC!
+            B 564  VOLCANIC ASH [ARCHAIC!
+            B 565  LAVA [ARCHAIC!
+            B 566  PEBBLES 
+            B 567  STONES  
+            B 568  BOULDERS
+            B 569  BLACK
+            B 570  WHITE
+            B 571  GRAY
+            B 572  SOFT
+            B 573  HARD
+            B 574  STICKY  
+            B 575  SHELLS  
+            B 576  BROKEN  
+            B 577  BROWN
+            B 578  SPECKLED
+            B 579  LIGHT
+            B 580  CORAL
+            B 581  RED
+            B 582  YELLOW  
+            B 583  DARK
+            B 584  BLUE
+            B 585  CHOCOLATE [ARCHAIC! 
+            B 586  ORANGE  
+            B 587  GREEN
+            B 588  VIOLET  
+            B 589  PUMICE [ARCHAIC!
+            B 590  CINDERS [ARCHAIC!
+            B 591  OYSTERS 
+            B 592  MUSSELS [ARCHAIC!
+            B 593  SPONGE  
+            B 594  SEAWEED 
+            B 595  GRASS
+            B 596  GLOBIGERINA [ARCHAIC!
+            B 597  SMALL
+            B 598  LARGE
+            B 599  KELP (LABEL)  
+            D 702  ANCHORAGE (SMALL VESSELS) 
+            S 710  SOUNDING (WHOLE METERS)
+            S 711  SOUNDING (METERS AND TENTHS)
+            D 767  DAYBEACON, GREEN
+            D 787  SUPER BUOY, LIGHTED (TANKER TERMINAL) 
+            L 791  PIPELINE (ABANDONED)
+            L 801  PIPELINE--SEWER OUTFALL
+            L 802  RAMP (TO SCALE)
+            L 803  PIPELINE, POTABLE WATER INTAKE  
+            L 808  OVERHEAD CABLE
+            L 815  AIRPORT RUNWAY
+            L 862  OVERHEAD PIPELINE
+            L 865  LEVEE, DIKE (SINGLE LINE) 
+            L 869  LIVING RESOURCES, OYS. BAR (AREA LIMITS)
+            L 871  KELP (AREA LIMITS)  
+            L 872  GRASS (AREA LIMITS) 
+            L 877  GLACIER (AREA LIMITS)
+            S 881  SOUNDING, METERS AND TENTHS (MGD77)
+            L 883  PILES, ETC. (ROW OR CONFIGURATION)
+            D 884  RUINS (SYMBOL)
+            D 885  DUCK BLIND
+            D 886  DUCK BLIND RUINS
+            L 887  RAILROAD, ABANDONED 
+            D 889  OIL/GAS WELL  
+            D 890  CRIB (SYMBOL) 
+            D 891  RUINS (SYMBOL)
+            L 892  CRIB (CONFIGURATION OR AREA LIMITS)
+            D 893  RUINS (SYMBOL)
+            L 894  FOUL (AREA LIMITS)  
+            D 906  DAYBEACON, FRONT RANGE
+            D 907  DAYBEACON, REAR RANGE
+            L 915  BLUFF
+            D 919  ROCK, SUBMERGED (EST. DEPTH)
+            S 920  SOUNDING, WIRE-DRAG HANG OR GRNDG.--FEET AND TENTHS
+            L 921  FLOATING BARRIER (LOG BOOM, ETC.)
+            L 922  FLOODGATE, TIDEGATE 
+            L 923  PILES, ETC. (ROW OR CONFIGURATION)
+            L 925  PILES, ETC. (ROW OR CONFIGURATION)
+            L 926  PILES, ETC. (AREA LIMITS) 
+            L 927  PILES, ETC. (AREA LIMITS) 
+            L 930  PILES, ETC. (AREA LIMITS) 
+            D 934  ISLET (HYDRO. SOURCE)
+            D 947  ARTICULATED LIGHT
+            S 955  SOUNDING  (METERS & CENTIMETERS)
+            S 959  SOUNDING, MINUS (METERS & CENTIMETERS) 
+            T 990  PSR (CIRCLE)  
+            T 991  PSR (DASHED CIRCLE) 
+            T 992  PSR (SQUARE)  
+            D 993  POTENTIAL LANDMARK  

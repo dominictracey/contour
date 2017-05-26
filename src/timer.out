@@ -1,0 +1,16 @@
+Elapsed (ms)	Interval (ms)	Comment
+216942		157	Start
+217028		86	Begin ContourEngine::Initialize
+344293		127265	End refresh vals
+362121		17828	Begin ParametricSurfaceEngine::SetPoints
+367769		5648	New points incorporated
+367810		41	Begin PSEGrid::Fill
+5698132		5330322	End ParametricSurfaceEngine::SetPoints
+5698292		160	End ContourEngine::Initialize
+66012967		60314675	Begin ContourEngine::Initialize
+66067796		54829	End refresh vals
+66085371		17575	Begin ParametricSurfaceEngine::SetPoints
+66091279		5908	New points incorporated
+66091326		47	Begin PSEGrid::Fill
+68651342		2560016	End ParametricSurfaceEngine::SetPoints
+68651444		102	End ContourEngine::Initialize

@@ -1,0 +1,35 @@
+1) Get a postmaster running somewhere either locally or on your LAN. See documentation and make note of the host and port this is running on. I have it running on a machine with IP address 192.168.2.1, port 5432. Make sure, if you are not running the postmaster locally that you have your $PGDATA/pg_hba.conf file set up to allow access from your
+remote machine. I have some uber-security going on with a line that looks something like:
+
+host 	all	192.168.2.0	255.255.255.0	trust
+
+2) On the machine where the postmaster is running, create a user for the contour application. 
+
+bash$ createuser contour
+:
+:
+
+3) On the machine where contour is running you should be able to connect and create a
+database:
+
+bash$ createdb -h 192.168.2.7 -p 5432 -u contour
+
+You should only need to enter the username contour and hit <enter> for the password
+
+3a) Enable PL/pgSQL by going into psql as a Postgres super user and doing:
+
+CREATE FUNCTION plpgsql_call_handler () RETURNS OPAQUE AS '/usr/local/pgsql/lib/plpgsql.so' LANGUAGE 'C';
+
+and
+
+CREATE TRUSTED PROCEDURAL LANGUAGE 'plpgsql' HANDLER plpgsql_call_handler LANCOMPILER 'PL/pgSQL';
+
+4) Run the various sql scripts in this directory by executing the shell script createtables.
+
+To connect interactively use something like:
+
+bash$ psql -h 192.168.2.7 -p 5432 -u contour
+
+To run a single file, try
+
+bash$ psql -f filename.sql -h 192.168.2.7 -p 5432 -u contour

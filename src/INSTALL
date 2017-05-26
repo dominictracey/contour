@@ -1,0 +1,76 @@
+Installation notes for Contour 0.9.9
+
+Contour has only ever been built on Linux. I have it working on Red Hat 6.2, 7.1 and 7.2.
+Assuming you have all the pre-requisites described below, you should just be able to unpack
+the tarball and run './configure; make; ./contour' to run the client.
+
+GPS INTEGRATION ---
+
+If you have a GPS that has a serial port connector and is on the supported
+list (NMEA-compliant + Earthmate pretty much):
+
+The gpsd source distribution is included in the contour tarball under the gpsd/
+directory. If it doesn't configure and build as part of the full configuration
+and build, 'cd gpsd; ./configure; make; make install'
+
+I have got a Delorme Earthmate to test with, hooked it up to my serial port 
+and started the gpsd daemon with:
+
+./gpsd -s 9600 -p /dev/ttyS0 -T e -l 4500N -L 6800W
+
+You can test its working by telnetting to localhost:2947 (the default port)
+with:
+
+telnet localhost 2947
+
+and typing 'R' <enter> to see if you're getting data from your GPS. If that
+works you can try the included gps package to look at all the GPS satellites
+if you want.
+
+NOTE: If you don't have a GPS, don't worry, its not a requirement to check out
+the system.
+
+--
+MOZILLA INTEGRATION
+
+Get the latest version of Mozilla and install it. You can download binary distributions
+from http://mozilla.org or get it off of your distribution media. As of this writing, I'm
+running milestone 0.9.15, though its worked with versions as early as 0.9.7. If you are
+looking for a good place to put it, try /usr/local/mozilla -- this is one of the places the
+contour configure script looks for it. If you get your shoe-laces tied together trying to
+configure, use the --with-mozilla* options (try ./configure --help to get a list).
+
+Something you have to watch for is the "insecure submission" default that locks up the 
+gecko widget. To get around this, find the prefs.js user file (mine is in ~/.contour/mozilla)
+and add the line:
+
+user_pref("security.warn_submit_insecure", false);
+
+--
+POSTGRESQL INSTALLATION
+
+I'm using 7.1.3, though I think 6.5.x should be ok. Again, if ./configure gets confused,
+you may need to help it with a --with-postgres-lib command line parameter.
+
+Contour integrates with Postgres in two ways. First, the web-server talks to it to store
+and display data through the web interface. Second, GPS data sampling is sent straight to
+the back-end. The second method is configured through the contour preferences dialog. If the
+defaults don't work, you'll need to run the software, edit the connection parameters, save
+them and restart the program.
+
+Integrating Apache, PHP and Postgres is described ad nauseum at http://php.org under the
+installation documentation.
+
+When you have the database set-up, edit and run the script $INSTALL_DIR/sql/build.sh
+to populate the back-end.
+
+--
+GTK
+
+You must have the GTK+ 1.2 or better installed on your system.
+
+--
+FEEDBACK
+
+I'd love to hear of your experiences (good and bad) trying to get this rather complex beast
+to run. Drop a line at aquilon@users.sourceforge.net.
