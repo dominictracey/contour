@@ -9,15 +9,15 @@ The old project site on SourceForge: (http://contour.sourceforge.net/)
 I used bathymetric data to create pretty (though admittedly garish) visualizations of the
 ocean bottom (which is the important thing when you are dragging a giant net behind you in 600' of water). 
 
-![scr1](./images/2002-04-28-a)
+![scr1](./images/2002-04-28-a.png)
 
 It integrated with GPS to provide tracklines showing where you were and where you had been:
 
-![scr2](./images/2002-04-28-b) 
+![scr2](./images/2002-04-28-b.png) 
 
 This was similar UI to the paper and ink plotters many boats used which created rice paper plots like this:
 
-![paper](./images/contour - 1.png)
+![paper](./images/contour-1.png)
 
 The catch reporting used one of the original browser engines:
 
